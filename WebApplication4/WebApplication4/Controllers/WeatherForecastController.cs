@@ -8,7 +8,7 @@ namespace Homework
     [Route("[controller]")]
     public class SorterController : ControllerBase
     {
-        [HttpPost("Sort")]
+        [HttpPost("Sortt")]
         public int[] Sort(int[] arr)
         {
             Sorter sorter = new Sorter();
