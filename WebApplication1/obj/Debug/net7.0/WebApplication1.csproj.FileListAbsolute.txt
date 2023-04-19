@@ -5,3 +5,10 @@ C:\Users\Admin\source\repos\WebApplication1\obj\Debug\net7.0\WebApplication1.Ass
 C:\Users\Admin\source\repos\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\WebApplication1\obj\Debug\net7.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Admin\source\repos\WebApplication1\obj\Debug\net7.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\deveducation\WebApplication1\obj\Debug\net7.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache

@@ -1,34 +1,77 @@
 
-namespace WebApplication1
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.Metrics;
+using System.Runtime.InteropServices;
+
+namespace Homework
 {
-    public class Program
+    [ApiController]
+    [Route("[controller]")]
+    public class SorterController2 : ControllerBase
     {
-        public static void Main(string[] args)
+        [HttpPost("Sortint")]
+        public int[] Sort(int[] notSortedArray)
         {
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            int[] sortedArray = notSortedArray;
+            int temp;
+            string notSortedString;
+            for (int j = 0; j <= sortedArray.Length - 2; j++)
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                for (int i = 0; i <= sortedArray.Length - 2; i++)
+                {
+                    if (sortedArray[i] > sortedArray[i + 1])
+                    {
+                        temp = sortedArray[i + 1];
+                        sortedArray[i + 1] = sortedArray[i];
+                        sortedArray[i] = temp;
+                    }
+                }
             }
-
-            app.UseAuthorization();
-
-
-            app.MapControllers();
-
-            app.Run();
+            return sortedArray;
+        }
+        [HttpPost("SortDbl")]
+        public double[] Sort(double[] notSortedArray)
+        {
+            double[] sortedArray = notSortedArray;
+            double temp;
+            for (int j = 0; j <= sortedArray.Length - 2; j++)
+            {
+                for (int i = 0; i <= sortedArray.Length - 2; i++)
+                {
+                    if (sortedArray[i] > sortedArray[i + 1])
+                    {
+                        temp = sortedArray[i + 1];
+                        sortedArray[i + 1] = sortedArray[i];
+                        sortedArray[i] = temp;
+                    }
+                }
+            }
+            return sortedArray;
+        }
+        [HttpPost("SortChr")]
+        public char[] Sort(char[] notSortedArray)
+        {
+            char[] sortedArray = notSortedArray;
+            char temp;
+            for (int j = 0; j <= sortedArray.Length - 2; j++)
+            {
+                for (int i = 0; i <= sortedArray.Length - 2; i++)
+                {
+                    if (sortedArray[i] > sortedArray[i + 1])
+                    {
+                        temp = sortedArray[i + 1];
+                        sortedArray[i + 1] = sortedArray[i];
+                        sortedArray[i] = temp;
+                    }
+                }
+            }
+            return sortedArray;
+        }
+        [HttpPost("Sortstr")]
+        public string Sort(string notSortedArray)
+        {
+            var chars = notSortedArray.ToCharArray();
+            return string.Join("", Sort(chars));
         }
     }
 }
